@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body style="font-family: Pricedown">
+    <style type="text/css">
+      @font-face {
+        font-family: "Pricedown";
+        src: url("./pricedown.otf") format("truetype");
+      }
+      p.customfont {
+        font-family: "Pricedown", Verdana, Tahoma;
+        font-size: 40px;
+        color: white;
+        -webkit-text-stroke: 2.6px black; /* width and color */
+        margin-left: 20px;
+        letter-spacing: 1px;
+      }
+    </style>
+    <p class="customfont" id="date-time"></p>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
