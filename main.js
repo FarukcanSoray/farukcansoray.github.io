@@ -12,15 +12,14 @@ window.addEventListener("load", () => {
     const minute = minutes < 10 ? "0" + minutes : minutes;
 
     //make clock a 12-hour time clock
-    const hourTime = hour > 12 ? hour - 12 : hour;
+    const hourTime = hour;
 
     // if (hour === 0) {
     //   hour = 12;
     // }
     //assigning 'am' or 'pm' to indicate time of the day
-    const ampm = hour < 12 ? "AM" : "PM";
 
-    const time = hourTime + ":" + minute + " " + ampm;
+    const time = hourTime + ":" + minute;
 
     //combine current date and time
     const dateTime = time;
